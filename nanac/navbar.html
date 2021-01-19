@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive menu design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav>
+		<div class="toggle">
+			<i class="fa fa-bars navBar" aria-hidden="true"></i>
+
+		</div>
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">Abouts</a>
+			</li>
+			<li>
+				<a href="#">products</a>
+			</li>
+			<li>
+				<a href="#">services</a>
+			</li>
+			<li>
+				<a href="#">feedback</a>
+			</li>
+			
+
+		</ul>
+	</nav>
+	<script src="http://code.jquery.com/jquery-3.5.1.js"> </script>
+<script> 
+  $(document).ready(function(){
+      $('.navBar').click(function(){
+      	$('ul').toggleclass('active');
+      });
+
+  })
+</script>
+
+</body>
+</html>
